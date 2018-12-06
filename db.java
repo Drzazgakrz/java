@@ -2,7 +2,6 @@ import java.sql.*;
 
 public class db {
 	public static void main(String... args){
-		for(int iterator = 0; iterator < 3; iterator++){
 			try {
 				Thread.sleep(20000);
 				Class.forName("com.mysql.jdbc.Driver");
@@ -35,5 +34,4 @@ public class db {
 				
 			}
 		}
-	}
 }
