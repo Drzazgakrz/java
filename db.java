@@ -3,7 +3,6 @@ import java.sql.*;
 public class db {
 	public static void main(String... args){
 			try {
-				Thread.sleep(20000);
 				Class.forName("com.mysql.jdbc.Driver");
 				Connection conn = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/my_database","kdrzazga","pass");
 				Statement statement = conn.createStatement();
