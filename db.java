@@ -6,7 +6,7 @@ public class db {
 			try {
 				Thread.sleep(20000);
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection conn = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/my_database?user=kdrzazga&password=password");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/my_database","kdrzazga","password");
 				Statement statement = conn.createStatement();
 				statement.executeQuery("CREATE TABLE users ("+
 					"id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,"+
