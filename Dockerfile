@@ -4,5 +4,5 @@ COPY ./Db.java ./
 COPY ./skrypt.sh ./skrypt.sh
 RUN javac Db.java
 RUN chmod 777 ./skrypt.sh
-CMD [ "java", "-classpath","/mysql-connector-java-8.0.13.jar", "Db", "init"]
+CMD [ "java", "-classpath","mysql-connector-java-8.0.13.jar", "Db", "init"]
 RUN ./skrypt.sh
