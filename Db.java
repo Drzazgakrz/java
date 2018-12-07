@@ -47,7 +47,7 @@ public class Db {
 
 	public static void init(){
 		try {
-				Thread.sleep(30000);
+				Thread.sleep(60000);
 				statement.executeUpdate("CREATE TABLE IF NOT EXISTS users ("+
 					"id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,"+
 					"firstname VARCHAR(30),"+
