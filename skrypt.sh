@@ -1,5 +1,5 @@
 #!bin/bash
-java Db init
-while  true ; do
+
+while  java Db init -eq 0 ; do
 	sleep 300s
 done
